@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">DroidStory</string>
+
+  <string name="story.li.info">Android %1$s %2$s (API %3$d), released on %4$s.</string>
+  <string name="error.sync">Sync failed: %1$s</string>
+</resources>
