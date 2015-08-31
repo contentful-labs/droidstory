@@ -2,7 +2,7 @@
 
 Sample app showcasing several best practices for integrating [Vault][vault] in an Android project.
 
-![Screenshots](screenshots/sc.png)
+![Screenshots](droidstory-android/screenshots/sc.png)
 
 Libraries
 ---------

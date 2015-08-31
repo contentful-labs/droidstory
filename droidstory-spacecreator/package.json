@@ -1,0 +1,16 @@
+{
+  "name": "droidstory-sc",
+  "version": "1.0.0",
+  "description": "DroidStory space creator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "contentful-management": "^0.1.1",
+    "contentful-publication": "^0.9.0"
+  }
+}
