@@ -54,12 +54,25 @@ cdaClient.space().then(function (srcSpace) {
             }
           }).run()
         }).then(function (res) {
-          return Promise.resolve(space);
+          return cmaClient.request('/spaces/' + space.sys.id + '/api_keys', {
+            method: 'POST',
+            body: JSON.stringify({
+              name: 'DroidSpace tutorial key',
+              description: 'Created by the droidstory-spacecreator tool. https://github.com/contentful-labs/droidstory'
+            });
+          });
+        }).then(function (apiKey) {
+          return {
+            spaceId: space.sys.id,
+            accessToken: apiKey.accessToken
+          };
         });
       });
 }).catch(function (error) {
   console.log('Failure: ', error);
   throw error;
-}).then(function (space) {
-  console.log('All done, space ID: ', space.sys.id);
+}).then(function (result) {
+  console.log('All done');
+  console.log('Space ID:', result.spaceId);
+  console.log('Access Token:', result.accessToken);
 });
