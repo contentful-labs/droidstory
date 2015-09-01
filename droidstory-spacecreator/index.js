@@ -59,7 +59,7 @@ cdaClient.space().then(function (srcSpace) {
             body: JSON.stringify({
               name: 'DroidSpace tutorial key',
               description: 'Created by the droidstory-spacecreator tool. https://github.com/contentful-labs/droidstory'
-            });
+            })
           });
         }).then(function (apiKey) {
           return {
